@@ -1,0 +1,148 @@
+/* Custom styles for Attendance dApp */
+
+/* Base styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar customization */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Card customization */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: 500;
+}
+
+/* Table customization */
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  border-bottom-width: 1px;
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+/* Form control customization */
+.form-control:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
+
+/* Button customization */
+.btn-primary {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+  border-color: #4338ca;
+}
+
+.btn-outline-primary {
+  color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+/* Badge customization */
+.badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Custom status badges */
+.badge-present {
+  background-color: #10b981;
+}
+
+.badge-absent {
+  background-color: #ef4444;
+}
+
+.badge-excused {
+  background-color: #f59e0b;
+}
+
+/* Spinner customization */
+.spinner-border {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-width: 0.2em;
+}
+
+/* List group customization */
+.list-group-item {
+  border-left: none;
+  border-right: none;
+}
+
+.list-group-item:first-child {
+  border-top: none;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+/* Footer customization */
+footer {
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom utility classes */
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Animation for alerts */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.alert {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .table-responsive {
+    margin-bottom: 1rem;
+  }
+}
